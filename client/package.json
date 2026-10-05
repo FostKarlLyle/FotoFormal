@@ -1,0 +1,27 @@
+{
+  "name": "fotoformal-client",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Frontend FotoFormal — ubah foto jadi foto formal dengan latar & pakaian pilihan.",
+  "scripts": {
+    "predev": "node scripts/copy-mediapipe-assets.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/copy-mediapipe-assets.mjs",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "postinstall": "node scripts/copy-mediapipe-assets.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/tasks-vision": "^1.0.1",
+    "lucide-react": "^1.52.0",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^6.1.2",
+    "tailwindcss": "^4.3.3",
+    "vite": "^8.3.2"
+  }
+}
